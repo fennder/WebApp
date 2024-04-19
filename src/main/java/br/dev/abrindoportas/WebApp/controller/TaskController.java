@@ -41,7 +41,14 @@ public class TaskController {
         TaskModel taskModelFind = taskModels.stream().filter(taskModel -> id.equals(taskModel.getId())).findFirst().get();
 
         mv.addObject("taskModel", taskModelFind);
+        
+        return mv;
+    }
 
+    @GetMapping("/list")
+    public ModelAndView getListString(){
+        ModelAndView mv = new ModelAndView("list");
+        mv.addObject("taskModels", taskModels);
         return mv;
     }
 }
