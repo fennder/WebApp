@@ -23,20 +23,24 @@ public class TaskController {
         return "create";
     }
     
-    @PostMapping("/create")        
-    public void postCreateString(TaskModel taskModel){
+    @PostMapping("/create")
+    public String postCreateString(TaskModel taskModel){
         // System.out.println("O nome da tarefa é: " + taskModel.getName());
         Long id = taskModels.size() + 1L;
         
         taskModels.add(new TaskModel(id, taskModel.getName(), taskModel.getDate()));
+
+        return "redirect:/list";
     }
 
-    @GetMapping("/edit/{id}")  
+    @GetMapping("/edit/{id}")
     public ModelAndView getEditString(@PathVariable("id") Long id){
         
         ModelAndView mv = new ModelAndView("create");
 
         TaskModel taskModelFind = taskModels.stream().filter(taskModel -> id.equals(taskModel.getId())).findFirst().get();
+
+        mv.addObject("taskModel", taskModelFind);
 
         return mv;
     }
