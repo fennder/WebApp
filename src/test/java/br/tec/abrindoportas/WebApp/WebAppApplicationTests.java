@@ -1,4 +1,4 @@
-package br.dev.abrindoportas.WebApp;
+package br.tec.abrindoportas.WebApp;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

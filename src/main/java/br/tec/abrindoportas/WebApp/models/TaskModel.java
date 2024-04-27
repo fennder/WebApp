@@ -1,4 +1,4 @@
-package br.dev.abrindoportas.WebApp.models;
+package br.tec.abrindoportas.WebApp.models;
 
 import java.util.Date;
 

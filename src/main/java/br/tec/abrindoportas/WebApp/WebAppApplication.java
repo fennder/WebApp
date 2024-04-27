@@ -1,4 +1,4 @@
-package br.dev.abrindoportas.WebApp;
+package br.tec.abrindoportas.WebApp;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

@@ -1,4 +1,4 @@
-package br.dev.abrindoportas.WebApp.controller;
+package br.tec.abrindoportas.WebApp.controller;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -7,11 +7,11 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
-
-import br.dev.abrindoportas.WebApp.models.TaskModel;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
+
+import br.tec.abrindoportas.WebApp.models.TaskModel;
 
 
 @Controller
